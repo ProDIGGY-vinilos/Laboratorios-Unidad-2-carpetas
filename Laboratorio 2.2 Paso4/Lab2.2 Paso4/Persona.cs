@@ -1,31 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab2._2_Paso4
 {
-    class Persona
+    class Persona : Program
     {
         private string nombre, apellido;
         private int dni, edad;
+        DateTime fecha = DateTime.Now;
 
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Apellido { get => apellido; set => apellido = value; }
+        public int Dni { get => dni; set => dni = value; }
+        public int Edad { get => edad; set => edad = value; }
 
         public Persona(string nombre, string apellido, int dni, int edad)
         {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;
-            this.edad = edad;
-            Console.WriteLine("Objeto persona creado con exito dni: {0}", this.dni);
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Dni = dni;
+            this.Edad = edad;
+            
         }
         public Persona()
         {
         }
-        public string GetNombre()
+
+        public int GetAge()
         {
-            return (nombre +" "+ apellido);
+            int anos = 0;
+            anos = fecha.Year - this.edad;
+            return anos;
+        }
+        public string GetFullName()
+        {
+            return (Nombre +" "+ Apellido);
         }
     }
 }
