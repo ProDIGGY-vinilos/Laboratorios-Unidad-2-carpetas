@@ -23,7 +23,7 @@ namespace Lab2._2_Paso4
                     Console.WriteLine("A continuacion indique los datos de la persona...");
                     personas.Add(AgregarPersona());
                     Console.WriteLine("-----------------------"); int cont = personas.Count - 1; 
-                    Console.WriteLine("Persona {0} añadida con exito", personas[cont].Dni);
+                    Console.WriteLine("Persona {0}  de {1} años añadida con exito", personas[cont].GetFullName(), personas[cont].GetAge());
                     Console.WriteLine("-----------------------");
                     Menu(personas);
                     break;
