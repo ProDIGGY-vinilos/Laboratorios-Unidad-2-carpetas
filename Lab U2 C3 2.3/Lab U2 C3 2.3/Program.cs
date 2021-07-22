@@ -6,11 +6,12 @@ using System.Linq;
 namespace Lab_U2_C3_2._3
 {
     class Program
-    {       
-            static void Main(string[] args)
-            {
-                //Paso1.PasoProvincia();
-                Paso2.SeleccionNum();
-            }             
+    {                  
+        static void Main(string[] args)
+        {
+            //Paso1.PasoProvincia();
+            //Paso2.SeleccionNum();
+            Paso3.MostrarCod();
+        }             
     }
 }
