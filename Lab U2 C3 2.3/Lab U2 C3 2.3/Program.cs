@@ -11,7 +11,8 @@ namespace Lab_U2_C3_2._3
         {
             //Paso1.PasoProvincia();
             //Paso2.SeleccionNum();
-            Paso3.MostrarCod();
+            //Paso3.MostrarCod();
+            Paso4.AltEmpl();
         }             
     }
 }
