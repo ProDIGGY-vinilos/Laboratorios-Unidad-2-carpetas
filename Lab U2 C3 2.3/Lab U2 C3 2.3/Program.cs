@@ -9,7 +9,8 @@ namespace Lab_U2_C3_2._3
     {       
             static void Main(string[] args)
             {
-                Paso1.PasoProvincia();
+                //Paso1.PasoProvincia();
+                Paso2.SeleccionNum();
             }             
     }
 }
